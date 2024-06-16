@@ -10,6 +10,7 @@
   "author": "siddharth kalani",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^4.1.2",
     "dotenv": "^16.4.5",
     "minimist": "^1.2.8",
     "progress": "^2.0.3"
