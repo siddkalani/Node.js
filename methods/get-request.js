@@ -16,7 +16,7 @@ module.exports = (req, res) => {
         res.writeHead(400, { "Content-Type": "application/json" });
         res.end(JSON.stringify({ message: "error", title: "Invalid id" }));
     }
-    else if (regex.test(id)) {
+    else if (baseUrl === "/api/movies/" && regex.test(id)) {
         res.setHeader("Content-Type", "application/json");
         const filteredMovie = req.movies.filter((movie) => movie.id === id);
         
